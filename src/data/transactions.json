@@ -1,0 +1,52 @@
+[
+    {
+        "id": 0,
+        "dia": "Ontem",
+        "valor": "540,00"
+    },
+    {
+        "id": 1,
+        "dia": "Quarta-feira",
+        "valor": "273,90"
+    },
+    {
+        "id": 2,
+        "dia": "Terça-feira",
+        "valor": "1.456,20"
+    },
+    {
+        "id": 3,
+        "dia": "Segunda-feira",
+        "valor": "493,44"
+    },
+    {
+        "id": 4,
+        "dia": "Sexta-feira",
+        "valor": "267,89"
+    },
+    {
+        "id": 5,
+        "dia": "Sexta-feira",
+        "valor": "789,12"
+    },
+    {
+        "id": 6,
+        "dia": "Quarta-feira",
+        "valor": "541,36"
+    },
+    {
+        "id": 7,
+        "dia": "Quarta-feira",
+        "valor": "325,75"
+    },
+    {
+        "id": 8,
+        "dia": "Segunda-feira",
+        "valor": "678,90"
+    },
+    {
+        "id": 9,
+        "dia": "Segunda-feira",
+        "valor": "123,45"
+    }
+]
