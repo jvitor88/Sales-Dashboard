@@ -12,7 +12,7 @@ const Dashboard = () => {
       <Navbar />
       <div className="flex flex-col font-main w-10/12">
         <Userbar />
-        <div className='flex flex-col items-center justify-center gap-8 mt-5'>
+        <div className='flex flex-col items-center justify-center gap-8 mt-12'>
           <section className='flex gap-6'>
             <div className='bg-white rounded-xl'>
               <h2 className='pl-3 pt-3 text-xl font-bold'>Grafico de Receitas</h2>
