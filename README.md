@@ -4,7 +4,7 @@
 
 ## Objetivo:
 
-Projeto de um dashboard de vendas para empresas.
+Projeto de um dashboard de vendas, ferramenta que proporciona uma visão consolidada e em tempo real dos dados relacionados às atividades de vendas de uma empresa.
 
 ## Foi utilizado:
 
