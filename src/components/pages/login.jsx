@@ -1,24 +1,32 @@
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom';
+import { Button, Checkbox, Label, TextInput } from 'flowbite-react';
 import logo from '../../../public/main-logo.png'
 
 const Login = () => {
 
+    const navigate = useNavigate()
+
+    const handleLogin = (event) => {
+        event.preventDefault()
+        navigate('/dashboard')
+    }
+
     return (
         <div className='flex flex-col items-center justify-center gap-8 h-screen w-screen bg-mainbg'>
-            <div className='flex flex-col justify-center items-center gap-8 bg-white w-3/12 p-6 rounded-2xl'>
+            <form className='flex flex-col justify-center items-center gap-8 bg-white w-3/12 p-6 rounded-2xl' onSubmit={handleLogin}>
                 <img src={logo} alt="Logo da Empresa" className='w-2/6' />
-                <div className='flex flex-col w-full items-center gap-2'>
-                    <span className='flex self-start font-bold pl-10'>Login</span>
-                    <input className='w-10/12 p-2 self-center border-2 border-gray-700 rounded-xl' type="email" defaultValue='usuário@business.com' />
-                    <span className='flex self-start font-bold pl-10'>Senha</span>
-                    <input className='w-10/12 p-2 self-center border-2 border-gray-700 rounded-xl' type="password" defaultValue='mecontrata' />
-                    <div className='flex items-center self-start gap-2 m-2'>
-                        <input type="checkbox" id="logon" defaultChecked />
-                        <label htmlFor="logon">Manter-me logado</label>
-                    </div>
-                    <Link to='/dashboard'><button className='mt-5 p-1 w-36 h-10 bg-primary text-white font-bold rounded-xl'>Logar</button></Link>
+                <div className='flex flex-col gap-4 w-full'>
+                    <Label htmlFor="email1" value="E-mail" className='text-base font ml-3'/>
+                    <TextInput id="email1" type="email" placeholder="user@business.com" defaultValue='usuario@business.com' required />
+                    <Label htmlFor="password1" value="Senha" className='text-base font ml-3'/>
+                    <TextInput id="password1" type="password" defaultValue='mecontrata' required />
                 </div>
-            </div>
+                <div className="flex items-center gap-2">
+                    <Checkbox id="remember" defaultChecked/>
+                    <Label htmlFor="remember">Manter-me logado</Label>
+                </div>
+                <Button type="submit" className='mt-5 p-1 w-36 h-10 bg-primary text-white font-bold rounded-xl'>Acessar</Button>
+            </form>
         </div>
     )
 }
