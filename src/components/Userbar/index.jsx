@@ -14,7 +14,7 @@ const Userbar = () => {
       </div>
       <div className='flex gap-5 items-center cursor-pointer'>
         <FaBell/>
-        <Dropdown label={<img className=' w-12 h-12 rounded-full' src={image} alt="Foto de perfil" />} arrowIcon={false} inline>
+        <Dropdown className='p-2 rounded-xl' label={<img className=' w-12 h-12 rounded-full' src={image} alt="Foto de perfil" />} arrowIcon={false} inline>
           <Dropdown.Header>
             <span className="block text-sm">Usuário</span>
             <span className="block truncate text-sm font-medium">usuário@business.com</span>
