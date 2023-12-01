@@ -27,7 +27,7 @@ const Dashboard = () => {
             <Card title="Total de vendas (hoje)" value="3.265,21" arrowup={true} percent={11} />
             <Card title="Total líquido (hoje)" value="2.825,58" arrowup={true} percent={15} />
             <Card title="Cancelamentos (hoje)" value="130,00" arrowup={false} percent={80} />
-            <Card title="Reembolsos (hoje)" value="345,00" arrowup={false} percent={78} />
+            <Card title="Reembolsos (hoje)" value="344,20" arrowup={false} percent={78} />
           </section>
           <section>
             <div className='bg-white rounded-xl p-6'>
