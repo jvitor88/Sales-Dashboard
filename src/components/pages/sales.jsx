@@ -4,12 +4,12 @@ import Userbar from '../Userbar'
 import Navbar from '../navbar'
 import BuyerHistory from '../BuyerHistory'
 
-const Sales = () => {
+const Sales = ({ userEmail }) => {
   return (
-    <div className="flex w-full bg-mainbg">
+    <div className="flex w-full h-screen bg-mainbg">
       <Navbar />
       <div className="flex flex-col font-main w-10/12">
-        <Userbar />
+        <Userbar userEmail={userEmail} />
         <div className='flex flex-col items-center gap-8 mt-5'>
           <h1 className='text-3xl font-bold'>Vendas</h1>
           <div className='flex flex-col gap-10'>

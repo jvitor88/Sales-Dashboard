@@ -7,19 +7,22 @@ import Transactions from './components/pages/transactions';
 import Suport from './components/pages/suport';
 import Settings from './components/pages/settings';
 import Logout from './components/pages/logout';
+import { useState } from 'react';
 
 function App() {
+
+  const [userEmail, setUserEmail] = useState('user@business.com')
 
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/vendas" element={<Sales />} />
-        <Route path="/transacoes" element={<Transactions />} />
-        <Route path="/suporte" element={<Suport />} />
-        <Route path="/ajustes" element={<Settings />} />
-        <Route path="/sair" element={<Logout />} />
+        <Route path="/" element={<Login setUserEmail={setUserEmail} />} />
+        <Route path="/dashboard" element={<Dashboard userEmail={userEmail} />} />
+        <Route path="/vendas" element={<Sales userEmail={userEmail} />} />
+        <Route path="/transacoes" element={<Transactions userEmail={userEmail} />} />
+        <Route path="/suporte" element={<Suport userEmail={userEmail} />} />
+        <Route path="/ajustes" element={<Settings userEmail={userEmail} />} />
+        <Route path="/sair" element={<Logout userEmail={userEmail} />} />
       </Routes>
     </Router>
   )

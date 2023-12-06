@@ -3,12 +3,12 @@ import Navbar from '../navbar'
 import Userbar from '../Userbar'
 import Toggle from '../Toggle'
 
-const Settings = () => {
+const Settings = ({ userEmail }) => {
   return (
     <div className="flex w-screen h-screen bg-mainbg">
       <Navbar />
       <div className="flex flex-col font-main w-10/12">
-        <Userbar />
+        <Userbar userEmail={userEmail} />
         <div className='flex flex-col items-center justify-center gap-16 h-4/6 mt-5'>
           <h1 className='text-3xl font-bold'>Ajustes</h1>
           <div className='flex gap-16'>

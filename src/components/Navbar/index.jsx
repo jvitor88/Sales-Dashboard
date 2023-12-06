@@ -5,7 +5,7 @@ import { FaGrip, FaMoneyBillWave, FaCartShopping, FaUserGroup, FaGear, FaPowerOf
 
 const Navbar = () => {
   return (
-        <aside className='bg-white flex flex-col gap-10 items-center text-xl w-72 rounded-r-3xl'>
+        <aside className='bg-white flex flex-col gap-10 items-center text-xl w-72 rounded-r-3xl z-10'>
             <img className='w-32 mt-10' src={logo} alt="" />
             <ul className='flex flex-col gap-4'>
                 <Link to="/dashboard">

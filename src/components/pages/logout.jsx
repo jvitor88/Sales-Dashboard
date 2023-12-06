@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 import Userbar from '../Userbar'
 import Navbar from '../navbar'
 
-const Logout = () => {
+const Logout = ({ userEmail }) => {
   return (
     <div className="flex w-screen h-screen bg-mainbg">
       <Navbar />
       <div className="flex flex-col font-main w-10/12">
-        <Userbar />
+        <Userbar userEmail={userEmail} />
         <div className='flex flex-col items-center justify-center gap-8 mt-5 h-4/6'>
           <div className='flex flex-col justify-center items-center gap-8 bg-red-600 w-96 h-40 rounded-2xl'>
             <span className='text-white text-xl'>Deseja mesmo sair?</span>

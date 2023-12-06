@@ -4,12 +4,12 @@ import { FaSearch } from "react-icons/fa";
 import Userbar from '../Userbar';
 import Navbar from '../navbar';
 
-const Transactions = () => {
+const Transactions = ({ userEmail }) => {
   return (
     <div className="flex w-screen h-screen bg-mainbg">
       <Navbar />
       <div className="flex flex-col font-main w-10/12">
-        <Userbar />
+        <Userbar userEmail={userEmail} />
         <div className='flex flex-col items-center justify-center gap-5 mt-5'>
           <h1 className='text-3xl font-bold'>Histórico de Transações</h1>
           <div className='flex items-center justify-center w-8/12'>

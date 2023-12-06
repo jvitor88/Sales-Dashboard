@@ -4,14 +4,14 @@ import TransactionHistory from '../TransactionHistory'
 import Card from '../Card'
 import BuyerHistory from '../BuyerHistory'
 import Userbar from '../Userbar'
-import Navbar from '../navbar'
+import Navbar from '../Navbar'
 
-const Dashboard = () => {
+const Dashboard = ( { userEmail }) => {
   return (
-    <div className="flex w-screen h-screen bg-mainbg">
+    <div className="flex w-screen h-screen">
       <Navbar />
       <div className="flex flex-col font-main w-10/12">
-        <Userbar />
+        <Userbar userEmail={userEmail} />
         <div className='flex flex-col items-center justify-center gap-8 mt-12'>
           <section className='flex gap-6'>
             <div className='bg-white rounded-xl'>

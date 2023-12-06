@@ -3,12 +3,12 @@ import { FaHeadset, FaComment, FaEnvelope } from "react-icons/fa";
 import Navbar from '../navbar';
 import Userbar from '../Userbar';
 
-const Suport = () => {
+const Suport = ({ userEmail }) => {
   return (
     <div className="flex w-screen h-screen bg-mainbg">
       <Navbar />
       <div className="flex flex-col font-main w-10/12 h-screen">
-        <Userbar />
+        <Userbar userEmail={userEmail} />
         <div className='flex flex-col items-center justify-around h-4/6 mt-5'>
           <h1 className='text-3xl font-bold'>Entre em contato conosco!</h1>
           <div className='flex gap-8'>
