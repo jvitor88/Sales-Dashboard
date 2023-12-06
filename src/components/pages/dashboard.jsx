@@ -30,8 +30,8 @@ const Dashboard = ( { userEmail }) => {
             <Card title="Reembolsos (hoje)" value="344,20" arrowup={false} percent={78} />
           </section>
           <section>
-            <div className='bg-white rounded-xl p-6'>
-              <h2 className='pl-3 text-xl font-bold'>Histórico de Vendas</h2>
+            <div className='bg-white rounded-xl p-4'>
+              <h2 className='pl-1 text-xl font-bold'>Histórico de Vendas</h2>
               <BuyerHistory qtd={3} />
             </div>
           </section>
